@@ -41,6 +41,7 @@
 | 论文标题 | 期刊名称 | 发表年份 | DOI链接 |
 |---------|----------|----------|---------|
 | An Efficient Large Kernel Convolution Network Designed for Neural | Engineering Applications of Artificial Intelligence | 2024 | [https://doi.org/10.1016/j.engappai.2024.109887](https://doi.org/10.1016/j.engappai.2024.109887) |
+| An Efficient Segmentation Model With Multipath Attention Mechanism Enabling Particle Size Characterization of Coal Dust | IEEE Transactions on Industrial Informatics | 2024 | [10.1109/TII.2023.3342482](https://doi.org/10.1109/TII.2023.3342482) |
 
 ## 技术文档
 
