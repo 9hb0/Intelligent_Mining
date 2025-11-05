@@ -28,6 +28,12 @@
 
 （智能矿山相关的数据集资源）
 
+- [AutoMine Dataset](https://automine.cc/) - 用于矿山场景感知和定位的自动驾驶数据集
+- [Cityscapes Dataset](https://www.cityscapes-dataset.com/) - 用于城市场景语义分割的大规模数据集
+- [Safety Helmet Wearing Dataset](https://github.com/njvisionpower/Safety-Helmet-Wearing-Dataset) - 安全帽佩戴检测数据集，用于矿山安全监控
+- [AeroScapes Dataset](https://datasetninja.com/aeroscapes) - 无人机航拍语义分割数据集，模拟高空视角（类似露天矿监控视角）
+- [尾矿库识别数据集](https://www.urbancomp.net/archives/hsr-rs-tailing-ponds-detection-data-and-model#toc-head-2) - 基于高分遥感影像的尾矿库检测数据集
+
 ## 论文
 
 ### 综述论文
