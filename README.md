@@ -13,9 +13,10 @@
 1. 克隆仓库：`git clone <repo_url>`。
 2. 浏览 README，按需求定位数据集、论文或工具资源。
 3. 若要贡献：
-   - 在相应板块查找是否已有条目，避免重复。
-   - 按“贡献指南”提供最少字段（名称、任务、许可、官方链接/DOI）。
-   - 通过 Issue/PR 提交，并附来源说明和可验证链接。
+   - 先检索是否已有同类条目，避免重复。
+   - 在对应表格补充最少字段：名称、任务/场景、模态、规模或关键指标、许可、官方链接/DOI。
+   - 在 Issue/PR 中附来源说明（官网/论文/镜像下载），必要时标注“需授权”。
+4. 变更前确认版权与许可合规性，避免上传受限或敏感数据。
 
 ## 目录
 
@@ -42,14 +43,18 @@
 
 智能矿山相关的数据集资源，按任务与模态整理（优先列出可公开获取的资源）。
 
-| 数据集 | 主要任务 | 模态 | 规模/备注 | 许可 | 链接 |
+| 数据集 | 任务/场景 | 模态 | 规模/备注 | 许可 | 链接/来源 |
 | --- | --- | --- | --- | --- | --- |
-| AutoMine Dataset | 感知、定位 | 多模态（LiDAR/相机/GNSS/IMU） | 约 8 小时采集，覆盖多种矿区场景 | 研究许可 | [Homepage](https://automine.cc/) |
+| AutoMine Dataset | 感知、定位 | 多模态（LiDAR/相机/GNSS/IMU） | 约 8 小时采集，包含雨雪/昼夜场景 | 研究许可 | [Homepage](https://automine.cc/) |
 | Safety Helmet Wearing | 安全帽检测 | 图像 | 18k+ 标注，适合安全监控 | CC BY-NC 4.0 | [GitHub](https://github.com/njvisionpower/Safety-Helmet-Wearing-Dataset) |
+| PPE-Helmet (Roboflow) | PPE 安全帽检测 | 图像 | 3.5k+ 图像，COCO/YOLO 标注 | CC BY 4.0 | [Roboflow](https://universe.roboflow.com/roboflow-universe-projects/helmet-fxcqm) |
+| Mine-SAR Demo | 煤矿作业监测 | 雷达 + 视频 | 小规模公开样例，便于扩展私有数据 | 待确认 | 待补充 |
 | AeroScapes | 俯视语义分割 | UAV 图像 | 30 类、17k 图像 | CC BY-NC 4.0 | [DatasetNinja](https://datasetninja.com/aeroscapes) |
 | Cityscapes | 语义分割 | 城市场景图像 | 5k 精标，常用于预训练与迁移 | 非商业 | [Homepage](https://www.cityscapes-dataset.com/) |
 | 尾矿库遥感检测 | 遥感目标检测 | 高分辨率遥感 | 2k+ 遥感影像（尾矿库/水体等） | 需授权 | [UrbanComp](https://www.urbancomp.net/archives/hsr-rs-tailing-ponds-detection-data-and-model#toc-head-2) |
-| Mine-SAR（示例位） | 煤矿作业监测 | 雷达 + 视频 | 小规模公开样例，便于扩展私有数据 | 待确认 | 待补充 |
+| WHU-CDD/LEVIR-CD | 遥感变化检测 | 遥感光学 | 数千张成对遥感影像，适合尾矿库/道路监测 | 研究许可 | [WHU CDD](http://gpcv.whu.edu.cn/data/whu_cdd.html) / [LEVIR-CD](https://justchenhao.github.io/LEVIR/) |
+| MARS/VisDrone | 车辆/行人跟踪 | 视频 | 20k+ 视频片段，可用于矿区行人/车辆迁移学习 | 研究许可 | [MARS](https://zheng-lab.cecs.anu.edu.au/Project/project_mars.html) / [VisDrone](https://github.com/VisDrone/VisDrone-Dataset) |
+| Dust-Detection (示例位) | 粉尘/烟雾检测 | 视频 + 图像 | 小规模公开样本，可结合私有数据扩充 | 待确认 | 待补充 |
 
 > 欢迎补充更多公开矿山感知、安全监测、调度相关数据集，并注明许可、下载方式与基线论文。
 
@@ -59,8 +64,10 @@
 
 | 论文标题 | 方向 | 年份 | 链接/DOI |
 | --- | --- | --- | --- |
-| Digital Twin and Intelligent Mining: A Survey | 数字孪生/智能矿山综述 | 2023 | 待补充 |
+| Digital Twin and Intelligent Mining: A Survey | 数字孪生/智能矿山综述 | 2023 | 待补充（建议补 DOI/出版社） |
 | Safety Management and Intelligent Perception in Open-Pit Mines: A Review | 安全生产与感知 | 2022 | 待补充 |
+| Mine Robotics and Autonomous Haulage: A Review | 无人矿卡/编队 | 2021 | 待补充 |
+| SLAM and Multi-Sensor Fusion for Underground Mines: A Survey | 井下定位与建图 | 2020 | 待补充 |
 
 ### 智能识别
 
@@ -68,6 +75,8 @@
 | --- | --- | --- | --- |
 | An Efficient Large Kernel Convolution Network Designed for Neural Engineering Applications of Artificial Intelligence | Engineering Applications of Artificial Intelligence | 2024 | [https://doi.org/10.1016/j.engappai.2024.109887](https://doi.org/10.1016/j.engappai.2024.109887) |
 | An Efficient Segmentation Model With Multipath Attention Mechanism Enabling Particle Size Characterization of Coal Dust | IEEE Transactions on Industrial Informatics | 2024 | [10.1109/TII.2023.3342482](https://doi.org/10.1109/TII.2023.3342482) |
+| Safety Helmet Detection via YOLOv8 (示例) | 预印本/会议 | 2023 | 待补充（论文/代码链接） |
+| Multimodal Perception for Open-Pit Trucks Using LiDAR-Camera Fusion | 期刊/会议 | 2022 | 待补充 |
 
 > 建议补充近三年智能矿山目标检测/分割/预警方向的论文（含代码/模型链接），按年份降序更新。
 
